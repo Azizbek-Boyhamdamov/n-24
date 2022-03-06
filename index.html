@@ -14,15 +14,15 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-   <!-- SITE-HEADER -->
-   <header class="site-header">
+  <!-- SITE-HEADER -->
+  <header class="site-header">
     <div class="site-header-top">
       <div class="site-header-top-info container">
         <!-- LOGO -->
 
-          <a href="index.html" class="site-header-logo">
-            <img class="logo-img" src="./img/logo.svg" alt="logo-rasmi" width="264" height="28">
-          </a>
+        <a href="index.html" class="site-header-logo">
+          <img class="logo-img" src="./img/logo.svg" alt="logo-rasmi" width="264" height="28">
+        </a>
 
         <!-- CURRENCY-RATE -->
         <ul class="currency-rates">
@@ -31,6 +31,9 @@
         </ul>
 
         <!-- GLOBAL SEARCH FORM -->
+        <form class="global-search-form" action="https://echo.htmlacademy.ru" method="get">
+          <input aria-label="search" class="global-search-form-input" type="search" name="search" placeholder="Поиск" required >
+        </form>
 
         <!-- LANG-TOGGLE -->
         <div class="lang-toggle">
@@ -42,6 +45,33 @@
         <a class="button button-primary" href="./index.html">Войти</a>
       </div>
     </div>
-  </header>
-</body>
-</html>
+
+    <div class="container">
+      <!-- SITENAV -->
+      <nav class="sitenav">
+        <ul class="sitenav-list">
+          <li class="sitenav-item"><a class="sitenav-link" href="#" >Главное</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#" >Интересное</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#" >Экономика</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#" >Политика</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#" >Общество</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#" >Технологии</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#" >Спорт</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#" >Культура</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#" >Происшествия</a></li>
+          <li class="sitenav-item"><a class="sitenav-link" href="#" >Наука</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- SITE-HEADER-BANNER -->
+
+    <aside class="site-header-banner container">
+      <a class="site-header-banner-link" href="https://olcha.uz" target="_blank">
+        <img class="banner-img" src="./img/shop_me_ad.jpg" alt="banner-rasmi" srcset="./img/shop_me_ad.jpg 1x, ./img/shop_me_ad@2x.jpg 2x" width="100%" height="128">
+      </a>
+    </aside>
+
+    </header>
+  </body>
+  </html>
