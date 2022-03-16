@@ -324,7 +324,10 @@ li{
   padding: 25px 70px 25px 25px;
   margin: 60px 75px;
   border-radius: 10px;
-  background-color: #FFD7BA;
+  background-image: url("../img/CTA-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .notification-cta-text {
   font-size: 20px;
@@ -599,4 +602,17 @@ li{
   width: 25px;
   height: 25px;
   object-fit: cover;
+}
+/* BACKGROUND-IMAGE FOR RETINA SCREENS */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .notification-cta{
+    background-image: url("../img/CTA-bg-img@2x.jpg");
+  }
 }
