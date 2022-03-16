@@ -275,6 +275,7 @@ li{
 
 .article-card-link {
   color: #000;
+  font-weight: 500;
   display: inline-block;
 }
 
@@ -285,16 +286,16 @@ li{
   opacity: 0.6;
 }
 
+
 .article-card-text {
   font-weight: 400;
-  margin-top: 0;
+  margin-top: auto;
   margin-bottom: 15px;
 }
 .article-card-img {
   display: block;
   width: 360px;
   height: 165px;
-  margin-top: auto;
   margin-bottom: 15px;
   border-radius:10px ;
   object-fit: cover;
