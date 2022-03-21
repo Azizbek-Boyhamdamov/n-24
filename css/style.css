@@ -1,4 +1,13 @@
 /* GLOBAL */
+:root{
+  --accent-bg-color: #2959CE;
+  --accent-color: #fff ;
+  --outline-color:var(--accent-bg-color);
+  --common-font-weight: 400;
+  --link-hover-opacity: 0.8;
+  --link-active-opacity: 0.6;
+}
+
 html{
   box-sizing: border-box;
   height: 100%;
@@ -12,7 +21,7 @@ html{
 }
 
 *:focus{
-  outline: 1px dashed #2959CE;
+  outline: 2px dashed var(--outline-color);
   outline-offset: 3px;
 }
 
@@ -85,16 +94,16 @@ li{
   padding: 8px  6px ;
   margin-right: 35px;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: var(--accent-color);
 }
 
 
 .site-header-logo:hover{
-  opacity: 0.8;
+  opacity: var(--link-hover-opacity);
 }
 
 .site-header-logo:active{
-  opacity: 0.6;
+  opacity: var(--link-active-opacity);
 }
 
 
@@ -112,11 +121,11 @@ li{
   margin-right: 25px;
 }
 .currency-exchage-rate{
-  font-weight: 400;
+  font-weight: var(--common-font-weight);
 }
 
 .currency-label {
-  color: #2959CE;
+  color: var(--accent-bg-color);
 }
 
 
@@ -161,13 +170,13 @@ li{
 }
 
 .lang-toggle-link-active {
-  background-color: #fff;
+  background-color: var(--accent-color);
   color: #222;
 }
 
 .button-primary {
   background-color: #7296EC;
-  color: #fff;
+  color: var(--accent-color);
 }
 
 .button-block{
@@ -176,16 +185,16 @@ li{
 }
 
 .button:hover{
-  opacity: 0.8;
+  opacity: var(--link-hover-opacity);
 }
 
 .button:active{
-  opacity: 0.6;
+  opacity: var(--link-active-opacity);
 }
 
 .button-orang {
   background-color: #F78B3B;
-  color: #fff;
+  color: var(--accent-color);
 }
 
 
@@ -222,11 +231,11 @@ li{
 }
 
 .sitenav-link:hover{
-  color: #2959CE;
+  color:  var(--accent-bg-color);
 }
 
 .sitenav-link:active{
-  opacity: 0.6;
+  opacity: var(--link-active-opacity);
 }
 
 
@@ -290,12 +299,12 @@ li{
   color:#7296ec;
 }
 .article-card-link:active {
-  opacity: 0.6;
+  opacity: var(--link-active-opacity);
 }
 
 
 .article-card-text {
-  font-weight: 400;
+  font-weight: var(--common-font-weight);
   margin-top: auto;
   margin-bottom: 15px;
 }
@@ -321,7 +330,7 @@ li{
   font-size: 12px;
   line-height: normal;
   color: #5E5F61;
-  font-weight: 400;
+  font-weight: var(--common-font-weight);
 }
 
 /* NOTIFICATION-CTA */
@@ -398,13 +407,13 @@ li{
 }
 
 .article-list-link:active{
-  opacity: 0.6;
+  opacity: var(--link-active-opacity);
 }
 
 .article-list-text {
   margin-top: 0;
   margin-bottom: 15px;
-  font-weight: 400;
+  font-weight: var(--common-font-weight);
 }
 
 .news-list-more-btn{
@@ -485,12 +494,12 @@ li{
 }
 
 .sidebar-news-card-link:hover{
-  opacity: 0.6;
+  opacity: var(--link-active-opacity);
 }
 
 .sidebar-news-card-source-time {
   font-size: 13px;
-  font-weight: 400;
+  font-weight: var(--common-font-weight);
   line-height: 15px;
   color: #5E5F61;
 }
@@ -515,8 +524,10 @@ li{
 /* SITE-FOOTER */
 
 .site-footer {
+  --outline-color:var(--accent-color);
+  outline-color: var(--outline-color);
   background-color: #7297EF;
-  color: #fff;
+  color: var(--accent-color);
 }
 
 .site-footer-info {
@@ -543,11 +554,11 @@ li{
 }
 
 .site-footer-logo-link:hover{
-  opacity: 0.8;
+  opacity: var(--link-hover-opacity);
 }
 
 .site-footer-logo-link:active{
-  opacity: 0.6;
+  opacity: var(--link-active-opacity);
 }
 
 .site-footer-logo-img{
@@ -566,7 +577,7 @@ li{
   margin: 0;
   width: 230px;
   margin-right: 203px;
-  font-weight: 400;
+  font-weight: var(--common-font-weight);
   font-size: 12px;
   line-height: 19px;
 }
@@ -582,17 +593,17 @@ li{
 }
 
 .site-footer-link {
-  color: #fff;
+  color: var(--accent-color);
   line-height: 19px;
   transition: opacity 0.4s ease;
 }
 
 .site-footer-link:hover{
-  opacity: 0.8;
+  opacity: var(--link-hover-opacity);
 }
 
 .site-footer-link:active{
-  opacity: 0.6;
+  opacity: var(--link-active-opacity);
 }
 
 .second-site-footer-list {
@@ -683,11 +694,11 @@ li{
 }
 
 .form-submit-button:hover{
-  background-color: rgba(114, 151, 239,0.8);
+  background-color: rgba(114, 151, 239, var(--link-hover-opacity));
 }
 
 .form-submit-button:active{
-  background-color: rgba(114, 151, 239,0.6);
+  background-color: rgba(114, 151, 239,var(--link-active-opacity));
 }
 
 /* CONTACT*/
@@ -721,7 +732,7 @@ li{
 }
 .contact-details-link {
   display: block;
-  font-weight: 400;
+  font-weight: var(--common-font-weight);
   line-height: 19px;
   color: #000;
 }
