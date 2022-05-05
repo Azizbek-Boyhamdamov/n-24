@@ -392,12 +392,17 @@
 
   <section class="modal">
     <div class="modal__dialog">
-      <div class="modal__content">Хотите быть в курсе свежих новостей?  Включите уведомления!
+      <div class="modal__content">
+        <h2 class="visually-hidden">Уведомления</h2>
+        <p class="modal__lead">Хотите быть в курсе свежих новостей?  Включите уведомления!
+        </p>
+        <a href="#" class="modal__closer js-modal-closer">
+          <img class="modal__image" src="./img/modal-close.svg" alt="">
+        </a>
+        <button class="large-button button button-orang" type="button">Включит</button>
       </div>
-      <a href="#" class="modal__closer"><img class="modal__closer-image" src="./img/modal-close.svg" alt="modal__closer-image"></a>
-      <button class="modal__btn button button-orang" type="button">Включит</button>
     </div>
   </section>
-  <script src="main.js"></script>
+  <script src="./js/main.js"></script>
   </body>
   </html>
